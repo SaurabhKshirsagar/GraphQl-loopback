@@ -1,0 +1,21 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true
+  },
+  "loopback-graphql-relay": {
+    "path": "/graphql",
+    "graphiqlPath": "/graphiql",
+    "subscriptionServer": {
+      "disable": false,
+      "port": 5000,
+      "options": {},
+      "socketOptions": {}
+    },
+    "viewer": {
+      "AccessTokenModel": "CustomAccessToken",
+      "relation": "user",
+      "UserModel": "User"
+    }
+  }
+}
